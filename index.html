@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Двухперсонажная игра</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>Выберите уровень</h1>
+        <button onclick="startGame(1)">Уровень 1</button>
+        <button onclick="startGame(2)">Уровень 2</button>
+        <button onclick="startGame(3)">Уровень 3</button>
+    </div>
+    <div id="gameArea">
+        <div id="player1" class="player"></div>
+        <div id="player2" class="player"></div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>

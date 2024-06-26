@@ -1,0 +1,91 @@
+/* Основные стили для игры */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Область игры */
+#gameArea {
+    width: 800px;
+    height: 600px;
+    border: 2px solid #000;
+    position: relative;
+    display: none; /* скрываем игровую область по умолчанию */
+}
+
+/* Меню */
+#menu {
+    text-align: center;
+}
+
+/* Стили для игроков */
+.player {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 500px; /* Начальная позиция по вертикали (земля) */
+}
+
+#player1 {
+    /* background-color: red; */
+    left: 100px;
+}
+
+#player2 {
+    /* background-color: blue; */
+    left: 600px;
+}
+
+.player1-StandUp{
+    background-image: url('https://avatars.steamstatic.com/eb63b96e33b7c12623134c4c9050c121ce378d1e_full.jpg');
+    background-size: 60px 60px;
+}
+.player2-StandUp{
+    background-image: url('https://s00.yaplakal.com/pics/pics_original/1/3/6/12739631.jpg');
+    background-size: 60px 60px;
+}
+
+.player1-move-left {
+    background-image: url('https://i.gifer.com/Nc97.gif');
+    background-size: 60px 60px;
+    transform: scaleX(-1); /* Отражаем по горизонтали */
+}
+.player1-move-right {
+    background-image: url('https://i.gifer.com/Nc97.gif');
+    background-size: 60px 60px;
+}
+.player1-move-up {
+    background-image: url('https://i.gifer.com/Q87m.gif');
+    background-size: 60px 60px;
+}
+
+.player2-move-left {
+    background-image: url('https://i.gifer.com/Nc97.gif');
+    background-size: 60px 60px;
+    transform: scaleX(-1); /* Отражаем по горизонтали */
+}
+.player2-move-right {
+    background-image: url('https://i.gifer.com/Nc97.gif');
+    background-size: 60px 60px;
+}
+.player2-move-up {
+    background-image: url('https://i.gifer.com/Q87m.gif');
+    background-size: 60px 60px;
+}
+
+/* Фоны для уровней */
+.level-1 {
+    background-color: #add8e6; /* светло-голубой фон */
+}
+
+.level-2 {
+    background-color: #90ee90; /* светло-зелёный фон */
+}
+
+.level-3 {
+    background-color: #ffb6c1; /* светло-розовый фон */
+}
